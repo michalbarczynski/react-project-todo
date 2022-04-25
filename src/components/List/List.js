@@ -41,6 +41,18 @@ const List = () => {
         console.log('dodaned');
     };
 
+    const addCard = (newCard, columnId) => {
+        const columnsUpdated = columns.map(column => {
+            if(column.id === columnId)
+                return { ...column, cards: [...column.cards, { id: shortid(), title: newCard.title }]}
+            else
+                return column
+        })
+    
+        setColumns(columnsUpdated);
+    
+    };
+
     return (
         <div className={styles.list}>
             <header className={styles.header}>

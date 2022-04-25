@@ -1031,6 +1031,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.7.6":
+  version "7.17.9"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.9.tgz#d19fbf802d01a8cb6cf053a64e472d42c434ba72"
+  integrity sha512-lSiBBvodq29uShpWGNbgFdKYNiFDo5/HIYsaCEY9ff4sb10x9jizo2+pRrSyF4jKZCXqgzuqBOQKbUm90gQwJg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.16.7.tgz"
@@ -4544,6 +4551,13 @@ he@^1.2.0:
   resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+history@^5.1.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/history/-/history-5.3.0.tgz#1548abaa245ba47992f063a0783db91ef201c73b"
+  integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
 hooks-fixed@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hooks-fixed/-/hooks-fixed-1.0.1.tgz#f1f6694a62317fb36c11ffb067708a15947e6f9e"
@@ -7226,6 +7240,21 @@ react-refresh@^0.11.0:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
+react-router-dom@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.0.1.tgz#958d5deac8932ce209001ba7a11d5ae605148856"
+  integrity sha512-fiE+PzFTrof5q8Z/+RHzuiin9/U/q5KY2adlHClwYexbY0DqJnHcC/0U9yv3Amz9em2/bcK7X8mk7+zxB+qhvg==
+  dependencies:
+    history "^5.1.0"
+    react-router "6.0.1"
+
+react-router@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.0.1.tgz#3fe93ad11f91fb55e242a42628414cb47219e652"
+  integrity sha512-O3iab52icFnQaHWONZr50CcjRlf3gx8CCjPQ0YxN8xEuEklRJNgoZSeoYFYz0fLvA4cpnhc306Nd8BYgL4QZrQ==
+  dependencies:
+    history "^5.1.0"
+
 react-scripts@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
@@ -7348,10 +7377,10 @@ redux-devtools-extension@2.13.9:
   resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.9.tgz#6b764e8028b507adcb75a1cae790f71e6be08ae7"
   integrity sha512-cNJ8Q/EtjhQaZ71c8I9+BPySIBVEKssbPpskBfsXqb8HJ002A3KRVHfeRzwRo6mGPqsm7XuHTqNSNeS1Khig0A==
 
-redux@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
-  integrity sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw==
+redux@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.0.tgz#46f10d6e29b6666df758780437651eeb2b969f13"
+  integrity sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==
   dependencies:
     "@babel/runtime" "^7.9.2"
 
