@@ -7,7 +7,7 @@ const CardForm = props => {
     const [title, setTitle] = useState('');
     const handleSubmit = e => {
         e.preventDefault();
-        props.handleSubmit({title: title});
+        props.action({title: title}, props.columnId);
         setTitle('');
     }
 
@@ -21,3 +21,4 @@ return (
 
 }
 export default CardForm;
+

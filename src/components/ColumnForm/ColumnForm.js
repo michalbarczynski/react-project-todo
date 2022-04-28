@@ -11,7 +11,7 @@ const ColumnForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        props.handleSubmit({title: title, icon: icon});
+        props.action({title: title, icon: icon});
         setTitle('');
         setIcon('');
     };
