@@ -2,16 +2,18 @@ import styles from './ColumnForm.module.scss';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addColumn } from '../../redux/store';
 
-
-const ColumnForm = props => {
+const ColumnForm = () => {
 
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
+    const dispatch = useDispatch();
 
     const handleSubmit = e => {
         e.preventDefault();
-        props.action({title: title, icon: icon});
+        dispatch(addColumn({ title, icon }));
         setTitle('');
         setIcon('');
     };
@@ -26,7 +28,3 @@ const ColumnForm = props => {
 }
 
 export default ColumnForm;
-
-/*
-Sam proces dodawania kolumny wygląda z kolei następująco. Użytkownik wpisuje coś do inputu. Wartość ta jest zapisywana do stanu value. Następnie użytkownik klika button. To powoduje wyemitowanie na formularzu eventu submit. Z racji, że na tym elemencie mamy nasłuchiwacz na taki event, to od razu zostaje uruchomiona funkcja callback – nasza funkcja handleSubmit. Blokuje ona domyślne zachowanie JS-a, zeruje input, ale też uruchamia funkcję otrzymaną pod parametrem action i gdy ją wywołuje, przekazuje jej od razu informacje o tym, co było w naszym inpucie. Z racji, że u nas parametr action to referencja do funkcji addColumn w <List>, to właśnie ta funkcja jest w takiej sytuacji uruchomiona. Odbiera ona jako argument obiekt z informacją o title i dodaje do columns nowy obiekt właśnie o takiej nazwie.
-*/
