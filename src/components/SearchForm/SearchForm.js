@@ -17,6 +17,7 @@ const SearchForm = () => {
         dispatch(updateSearchString({searchString}));
     };
 
+
     return (
         <form className={styles.searchForm} onSubmit={handleSubmit}>
             <TextInput placeholder="Search..." value={searchString} onChange={e => setSearchString(e.target.value)}/>
