@@ -17,16 +17,38 @@ const initialState = {
         listId: '1',
         title: 'Games',
         icon: 'gamepad',
-      }
+      },
+      {
+        id: '4',
+        listId: '2',
+        title: 'Whisky',
+        icon: 'whiskey-glass-ice',
+      },
+      {
+        id: '5',
+        listId: '2',
+        title: 'Tequilla',
+        icon: 'martini-glass-citrus',
+      },
+      {      
+        id: '6',
+        listId: '2',
+        title: 'Rum',
+        icon: 'wine-bottle',
+      },
     ],
   
     cards: [
-      { id: '1', columnId: '1', title: 'This is Going to Hurt' },
-      { id: '2', columnId: '1', title: 'Interpreter of Maladies' },
-      { id: '3', columnId: '2', title: 'Harry Potter' },
-      { id: '4', columnId: '2', title: 'Star Wars' },
-      { id: '5', columnId: '3', title: 'The Witcher' },
-      { id: '6', columnId: '3', title: 'Skyrim' }
+      { id: '1', columnId: '1', title: 'This is Going to Hurt', isFavourite: false },
+      { id: '2', columnId: '1', title: 'Interpreter of Maladies', isFavourite: false },
+      { id: '3', columnId: '2', title: 'Harry Potter', isFavourite: false },
+      { id: '4', columnId: '2', title: 'Star Wars', isFavourite: false },
+      { id: '5', columnId: '3', title: 'The Witcher', isFavourite: false },
+      { id: '6', columnId: '3', title: 'Skyrim', isFavourite: false },
+      { id: '7', columnId: '4', title: 'Monkey Shoulder', isFavourite: false },
+      { id: '8', columnId: '4', title: 'Glenlivet', isFavourite: false },
+      { id: '9', columnId: '5', title: 'Olmeca', isFavourite: false },
+      { id: '10', columnId: '6', title: 'Bacardi Spiced', isFavourite: false }
     ],
 
     searchString: {

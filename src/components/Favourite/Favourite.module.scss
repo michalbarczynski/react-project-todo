@@ -1,15 +1,13 @@
 @use "sass:math";
 @import '../../styles/settings.scss';
 
-/*
-.columns {
+.favourite_columns {
   display: flex;
   justify-content: center;
   margin-top: 5%;
 }
-*/
 
-.column {
+.favourite_column {
   flex-shrink: 0;
   width: calc(33% - 12px);
   background: $color-light;
@@ -24,27 +22,12 @@
   }
 }
 
-.title {
-  text-align: center;
-  font-size: ($base-size * 1.5);
-  margin: 0 0 ($base-size * 1.5) 0;
-}
-
-.icon::before {
-  padding-right: $base-size;
-  color: $color-warning;
-  font-size: ($base-size * 2);
-  vertical-align: middle;
-  position: relative;
-  top: - math.div($base-size, 3);
-}
-
-.cards {
+.favourite_cards {
   padding: math.div($base-size, 2) 0;
 }
 
 @media (max-width: 767px) {
-  .column {
+  .favourite_column {
     width: 100%;
     margin: 0 0 $base-size 0;
   }
