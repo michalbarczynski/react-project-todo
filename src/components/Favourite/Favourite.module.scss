@@ -24,6 +24,10 @@
 
 .favourite_cards {
   padding: math.div($base-size, 2) 0;
+  
+  button:last-child {
+  display: none;
+  }
 }
 
 @media (max-width: 767px) {
