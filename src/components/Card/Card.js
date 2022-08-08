@@ -1,13 +1,13 @@
 import styles from './Card.module.scss';
 import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
-import { toggleCardFavourite } from '../../redux/store';
+import { toggleCardFavourite } from '../../redux/cardsRedux';
 
 const Card = props => {
 
     const cardId = props.cardId
 
-    const dispatch = useDispatch(); //ten hook jak działa potestować
+    const dispatch = useDispatch();
 
     const handleSubmit = e => {
         e.preventDefault();

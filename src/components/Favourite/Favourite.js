@@ -3,13 +3,12 @@ import Container from '../Container/Container';
 import PageTitle from '../PageTitle/PageTitle';
 import Card from '../Card/Card';
 import styles from './Favourite.module.scss';
-import { getFavouriteCards } from '../../redux/store';
+import { getFavouriteCards } from '../../redux/cardsRedux';
 import { useSelector } from 'react-redux';
 
 const Favourite = () => {
 
     const favouriteCards = useSelector(state => getFavouriteCards(state));
-    console.log(favouriteCards);
 
     if(favouriteCards.length === 0) {
         return <PageTitle>No favourite cards</PageTitle>
