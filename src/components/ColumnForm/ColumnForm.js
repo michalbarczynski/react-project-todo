@@ -17,7 +17,6 @@ const ColumnForm = props => {
         dispatch(addColumn({ title, icon, listId }));
         setTitle('');
         setIcon('');
-        console.log(listId, title, icon);
     };
 
     return (
